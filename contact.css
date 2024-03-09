@@ -1,0 +1,188 @@
+.contact_body {
+  background: linear-gradient(to right bottom, #000000, #141424);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  overflow: hidden;
+  cursor: crosshair;
+  height: 100vh; /* Ensure full viewport height */
+}
+
+.me {
+  font-family: 'VALORANT', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  line-height: 80vh; /* Adjust the value based on your design */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+  margin-top: -250px;
+  background-image: linear-gradient(
+    -225deg,
+    #52D3D8 0%,
+    #3887BE 29%,
+    #38419D 67%,
+    #200E3A 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@font-face {
+  font-family: VALORANT;
+  src: url(Valorant\ Font.ttf);
+}
+
+@font-face {
+  font-family: Coolvetica;
+  src: url(coolvetica\ rg.otf);
+}
+
+.emailme {
+  color: white;
+  font-family: 'Coolvetica', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 920px;
+  margin-right: -1580px;
+  position: absolute;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+}
+
+
+.container {
+  background-color: transparent;
+  position: absolute;
+  width: 80vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 700px;
+  margin-right: 1900px;
+}
+
+.container > *:not(:last-child) {
+  margin-right: 10px; /* Adjust the margin value as needed */
+}
+
+
+.fbicon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 50px;
+  transition: transform 0.3s ease;
+}
+
+.igcon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  margin-left: 270px;
+  margin-top: 50px;
+  transition: transform 0.3s ease;
+}
+
+.giticon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 50px;
+  transition: transform 0.3s ease;
+}
+
+.fbicon:hover,
+.igcon:hover,
+.giticon:hover {
+  transform: scale(1.2); /* Scale the icon on hover */
+}
+
+.fbicon:active,
+.igcon:active,
+.giticon:active {
+  transform: scale(0.8); /* Scale the icon on click/active state */
+}
+
+.menu__button {
+  min-width: 50px; /* Adjusted min-width */
+  height: 26px; /* Adjusted height */
+  margin-top: 900px; /* Adjusted margin-top */
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px; /* Adjusted padding */
+  border: 1px solid #ffffff00;
+  background-color: transparent;
+  font-family: 'VALORANT', sans-serif;
+  transition: background-color .4s;
+  position: absolute;
+}
+
+.menu__button:hover {
+  background-color: #ffffff;
+  color: #521d53;
+  border: transparent;
+}
+
+.menu__button span {
+  color: #38419D;
+  line-height: 1;
+  transition: color .4s;
+}
+
+.menu__button:hover span {
+  color: #000000;
+}
+.inquiry {
+  font-family: 'VALORANT', sans-serif;
+  position: absolute;
+  padding: 1.3em 3em;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-top: 200px;
+  margin-left: 0; /* Set left margin to auto */
+  margin-right: auto; /* Set right margin to auto */
+  display: inline-block; /* Make it a block-level element to center it */
+}
+
+.inquiry:hover {
+  background-color: #227b99;
+  box-shadow: 0px 15px 20px rgba(34, 78, 132, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.inquiry:active {
+  transform: translateY(-1px);
+}

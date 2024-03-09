@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="inquiry.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <h2 class="send">Send a message</h2>
+  </header>
+<article class="contact" data-page="contact">
+  <section class="contact-form">
+    <h3 class="h3 form-title"></h3>
+    <form action="submit.php" method="post" class="form" data-form>
+      <div class="input-wrapper">
+        <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+        <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+      </div>
+      <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+      <button class="submit" type="submit" data-form-btn>
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Send Message</span>
+      </button>
+    </form>
+  </section>
+</article>
+</body>
+</html>

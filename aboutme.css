@@ -1,0 +1,436 @@
+.aboutme_body {
+    background: linear-gradient(to right bottom, #000000, #141424);
+    /* You can adjust 'to bottom' to control the gradient direction */
+    /* Additional properties for better browser compatibility */
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* Change from 'fixed' to 'scroll' */
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth; /* Add this line for smooth scrolling */
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+.aboutme_body::-webkit-scrollbar {
+    width: 12px; /* You can adjust the width */
+}
+
+.aboutme_body::-webkit-scrollbar-thumb {
+    background-color: #000000; /* Set the color of the thumb (the moving part) */
+    border-radius: 6px; /* Set the border radius to round the corners of the thumb */
+}
+
+.aboutme_body::-webkit-scrollbar-track {
+    background-color: #141424; /* Set the color of the track (the non-moving part) */
+}
+
+
+
+
+@font-face {
+    font-family: VALORANT;
+    src: url(Valorant\ Font.ttf);
+}
+
+.me {
+    font-family: 'VALORANT', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    line-height: 325px; /* Adjust the value based on your design */
+    display: fixed;
+    align-items: center;
+    justify-content: center;
+    font-size: 200px;
+    margin-top: 260px;
+    background-image: linear-gradient(
+      -225deg,
+      #52D3D8 0%,
+      #3887BE 29%,
+      #38419D 67%,
+      #200E3A 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  .banner {
+    width: 1915px;
+    height: 660px;
+    display: flex;
+    background: linear-gradient(to bottom right, rgb(31, 83, 87), rgb(61, 37, 88)); /* Adjust the colors as needed */
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin: 200px auto; /* Optional: to center the container on the page */
+    margin-bottom: 140px;
+    margin-left: -100px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+}   
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.menu__button {
+  min-width: 50px; /* Adjusted min-width */
+  height: 26px; /* Adjusted height */
+  margin-top: -250px; /* Adjusted margin-top */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px; /* Adjusted padding */
+  border: 1px solid #ffffff00;
+  background-color: transparent;
+  font-family: 'VALORANT', sans-serif;
+  transition: background-color .4s;
+}
+
+.menu__button:hover {
+  background-color: #ffffff;
+  color: #521d53;
+  border: transparent;
+}
+
+.menu__button span {
+  color: #38419D;
+  line-height: 1;
+  transition: color .4s;
+}
+
+.menu__button:hover span {
+  color: #000000;
+}
+
+.card {
+  width: 1700px;
+  height: 600px;
+  background: linear-gradient(45deg, #394240, #07182E); /* Updated background with a gradient */
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-left: 80px;
+  color: #ffffff; /* Set text color to white */
+  font-size: 18px; /* Set font size */
+  font-family: 'Roboto', sans-serif; /* Updated font family */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Added box shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Added a smooth transition effect */
+}
+
+/* adawdwa */
+
+.component-title {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 10px; /* Adjusted size */
+  left: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem; /* Adjusted size */
+  font-weight: 700;
+  color: #888;
+  text-align: center;
+}
+
+.tab-container {
+  color: white;
+  position: fixed;
+  font-family: 'VALORANT', sans-serif;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1590px;
+  margin-top: -2050px; /* Adjusted size */
+  padding: 2px;
+  gap: 10px;
+  border-radius: 5px; /* Adjusted size */
+}
+
+.scroller {
+  content: "";
+  width: 10px; /* Adjusted size */
+  height: 80px; /* Adjusted size */
+  opacity: 0.4;
+  background: #888;
+  position: absolute;
+  top: 5px;
+  right: -12px; /* Adjusted size */
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  border-radius: 5px; /* Adjusted size */
+}
+
+.indicator {
+  content: "";
+  width: 8px; /* Adjusted size */
+  height: 10px; /* Adjusted size */
+  background: #4770bc;
+  position: absolute;
+  top: 8px;
+  right: -10px; /* Adjusted size */
+  z-index: 9;
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1), 0px 3px 1px rgba(0, 0, 0, 0.04); /* Adjusted size */
+  border-radius: 5px; /* Adjusted size */
+  transition: all 0.2s ease-out;
+}
+
+.tab {
+  width: 100px; /* Adjusted size */
+  height: 20px; /* Adjusted size */
+  position: absolute;
+  z-index: 99;
+  outline: none;
+  opacity: 0;
+}
+
+.tab_label {
+  width: 150px; /* Adjusted size */
+  height: 30px; /* Adjusted size */
+  position: relative;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  font-size: 0.8rem; /* Adjusted size */
+  cursor: pointer;
+}
+
+.tab--1:checked ~ .indicator {
+  top: 8px;
+}
+
+.tab--2:checked ~ .indicator {
+  top: calc(20px * 2 + 2px);
+}
+
+.tab--3:checked ~ .indicator {
+  top: calc(18px * 4 + 1px);
+}
+
+
+
+
+/* hobbies */
+
+.montage {
+  position: absolute;
+  height: 250px;
+  width: 440px;
+  border-radius: 20px;
+  margin-left: -1150px;
+  margin-top: -300px;
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.5); /* Black box shadow */
+}
+
+.montage1 {
+  position: absolute;
+  height: 250px;
+  width: 440px;
+  border-radius: 20px;
+  margin-left: -1150px;
+  margin-top: 300px;
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.5); /* Black box shadow */
+}
+
+.sisig,
+.adobo {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 0; /* Updated margin-top to 0 */
+  border-radius: 20px;
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.5); /* Black box shadow */
+}
+
+.sisig {
+  margin-left: 1350px; /* Adjusted margin-left if needed */
+}
+
+.adobo {
+  margin-left: 750px; /* Adjusted margin-left if needed */
+}
+
+
+.gaminghead,
+.cookinghead {
+  font-family: 'VALORANT', sans-serif;
+  font-weight: 100;
+  font-size: 60px;
+  color: #fff;
+  background-image: linear-gradient(
+    -225deg,
+    #52D3D8 0%,
+    #3887BE 29%,
+    #38419D 67%,
+    #200E3A 100%
+  );
+  background-size: auto auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+}
+
+.gaminghead {
+  margin-top: -380px;
+  margin-right: 300px;
+  animation: textclip-gaming 2s linear infinite;
+}
+
+.cookinghead {
+  margin-top: 100px;
+  margin-right: -100px;
+  animation: textclip-cooking 2s linear infinite;
+}
+
+@keyframes textclip-gaming {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes textclip-cooking {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+.gaming {
+  font-family: 'VALORANT', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  position: absolute;
+  margin-top: -200px;
+  margin-left: -80px;
+}
+
+.cooking {
+  font-family: 'VALORANT', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  position: absolute;
+  margin-top: 300px;
+  margin-left: -80px;
+}
+
+.introduction {
+  font-family: 'VALORANT', sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+  position: absolute;
+  text-align: center;
+  margin-top: 170px;
+  width: 100%; /* Ensures the text spans the full width */
+}
+
+
+.headerintro {
+  font-family: 'VALORANT', sans-serif;
+  font-weight: 100;
+  font-size: 150px;
+  background-image: linear-gradient(
+      -225deg,
+      #52D3D8 0%,
+      #3887BE 29%,
+      #38419D 67%,
+      #200E3A 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+.headerintro {
+  position: absolute;
+  margin-top: -200px;
+}
+
+@keyframes textclip {
+  to {
+      background-position: 200% center;
+  }
+}
+
+
+/* interest */
+.pokemon {
+  position: absolute;
+  width: 350px; /* Replace originalWidth with the actual width of the image */
+  height: 350px; /* Replace originalHeight with the actual height of the image */
+  margin-top: 150px;
+  margin-right: -50px;
+  border-radius: 20px;
+  box-shadow: 30px 30px 30px rgba(0.5, 0.5, 0.5, 0.5);
+}
+
+.motorcycle {
+  position: absolute;
+  width: 450px; /* Replace originalWidth with the actual width of the image */
+  height: 350px; /* Replace originalHeight with the actual height of the image */
+  margin-top: 150px;
+  margin-right: -1000px;
+  border-radius: 20px;
+  box-shadow: 30px 30px 30px rgba(0.5, 0.5, 0.5, 0.5);
+}
+
+.kitchen {
+  position: absolute;
+  width: 500px; /* Replace originalWidth with the actual width of the image */
+  height: 350px; /* Replace originalHeight with the actual height of the image */
+  margin-top: 150px;
+  margin-left: -1000px;
+  border-radius: 20px;
+  box-shadow: 30px 30px 30px rgba(0.5, 0.5, 0.5, 0.5);
+}
+
+.interest {
+  font-family: 'VALORANT', sans-serif;
+  font-weight: 100;
+  font-size: 150px;
+  background-image: linear-gradient(
+      -225deg,
+      #52D3D8 0%,
+      #3887BE 29%,
+      #38419D 67%,
+      #200E3A 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  margin-top: -230px;
+}

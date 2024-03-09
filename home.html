@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark's Profile</title>
+    <script src="home.js"></script>
+    <link href="home.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="path/to/VCR-OSD-MONO.css">
+    <style>
+        /* Add styles for fade-out and fade-in effects */
+        body.fade-out {
+            opacity: 0;
+            transition: opacity 0.5s ease-out;
+        }
+        body.fade-in {
+            opacity: 1;
+            transition: opacity 0.5s ease-in;
+        }
+    </style>
+</head>
+<body class="home_body">
+    <div class="container">
+            <div class="card1">
+                <img src="omen1.png" class="omen_card">
+                <h2 class="profile">Profile</h2>
+            </div>
+        
+        <div class="card2">
+            <img src="reyna1.png" class="jett_card">
+            <h2 class="about">About Me</h2>
+        </div>
+        <div class="card3">
+            <img src="jett.png" class="jett_card">
+            <h2 class="hobbies">Contact Me</h2>
+        </div>
+    </div>
+    <a href="logout.php" class="menu__button" id="aboutbacktohome">
+        <span>Logout</span>
+    </a>
+</body>
+</html>

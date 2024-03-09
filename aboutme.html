@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutme.css">
+    <script src="aboutme.js"></script>
+    <title>About Me</title>
+</head>
+<body class="aboutme_body" id="aboutmebody">
+    <p class="me" id="aboutme">All About Me</p>
+    <div class="tab-container">
+        <input class="tab tab--1" id="tab1" name="tab" type="radio" />
+        <label for="tab1" class="tab_label">Self</label>
+      
+        <input class="tab tab--2" id="tab2" name="tab" type="radio" />
+        <label for="tab2" class="tab_label">Hobby</label>
+      
+        <input class="tab tab--3" id="tab3" name="tab" type="radio" />
+        <label for="tab3" class="tab_label">Interests</label>
+      
+        <div class="indicator"></div>
+        <div class="scroller"></div>
+      </div>
+      
+    <div class="banner" id="profileBanner">
+       <div class="card">
+        <p class="headerintro">ABOUT MYSELF</p>
+        <p class="introduction">
+            I'm Mark. I'm into the color black,<br>
+            groove to RnB,and find peace in solo moments.<br>
+            Cleaning? Yeah, I do that when boredom hits.<br>
+            Oh, and Valorant is my jam. I'm trying to get<br>
+            better. (it's a gaming thing).
+        </p>
+       </div>
+    </div>
+    <div class="banner" id="profileBanner1">
+        <div class="card">
+            <video class="montage" autoplay loop muted>
+                <source src="montage.mp4" type="video/mp4">
+            </video>
+            <video class="montage1" autoplay loop muted>
+                <source src="montage1.mp4" type="video/mp4">
+            </video>
+            
+            <p class="gaminghead">GAMING</p>
+            <p class="gaming">
+                One of my hobbies is to play video games.<br>
+                The games I usually play are Valorant,<br>
+                League of Legends, and CS.
+            </p>
+            <p class="cookinghead">Cooking</p>
+            <p class="cooking">
+                Also cooking is one of my hobbies.<br>
+                I like to cook and experiment some dishes.<br>
+                Cooking is also my go-to-chores or<br>
+                if I'm bored.
+            </p>
+        <img src="sisig.png" class="sisig">
+        <img src="adobo.png" class="adobo">
+        </div>
+     </div>
+     <div class="banner" id="profileBanner2">
+        <div class="card">
+            <p class="interest">Interests</p>
+            <img src="pokemon.png" class="pokemon">
+            <img src="motorcycle.png" class="motorcycle">
+            <img src="kitchen.png" class="kitchen">
+        </div>
+     </div>
+     <br>
+     <button class="menu__button" id="gotoaboutme">
+        <span>back to top</span>
+    </button><br><br>
+    <button class="menu__button" id="aboutbacktohome">
+        <span>back to home</span>
+    </button>
+    
+</body>
+</html>
